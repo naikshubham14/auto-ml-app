@@ -1,2 +1,2 @@
 # auto-ml-app
-A auto ml appdeveloped using Lazypredict library and deployed using  streamlit
+A auto ml app developed using Lazypredict library and deployed using  streamlit
