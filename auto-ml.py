@@ -18,7 +18,7 @@ st.set_page_config(page_title='The Machine Learning Algorithm Comparison App',
 #---------------------------------#
 # Model building
 def build_model(df):
-    #df = df.loc[:100] # FOR TESTING PURPOSE, COMMENT THIS OUT FOR PRODUCTION
+    df = df.loc[:100] # FOR TESTING PURPOSE, COMMENT THIS OUT FOR PRODUCTION
     X = df.iloc[:,:-1] # Using all column except for the last column as X
     Y = df.iloc[:,-1] # Selecting the last column as Y
 
