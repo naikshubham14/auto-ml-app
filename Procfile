@@ -1,1 +1,1 @@
-web: sh setup.sh && streamlit run crypto-eda.py
+web: sh setup.sh && streamlit run auto-ml.py
