@@ -119,8 +119,7 @@ def imagedownload(plt, filename):
 #---------------------------------#
 st.write("""
 # The Machine Learning Algorithm Comparison App
-In this implementation, the **lazypredict** library is used for building several machine learning models at once.
-Developed by: Shubham Naik
+
 Reference: [[1]](https://medium.com/total-data-science/streamlit-build-your-first-streamlit-machine-learning-web-app-for-your-data-science-projects-e2a6fec99702)
             [[2]](https://alxmamaev.medium.com/how-to-build-automl-from-scratch-ce45a4b51e0f)
             [[3]](https://lazypredict.readthedocs.io/en/latest/)
