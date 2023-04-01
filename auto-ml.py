@@ -5,7 +5,7 @@ from lazypredict.Supervised import LazyRegressor
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_squared_error, r2_score
-from sklearn.datasets import load_diabetes, load_boston
+from sklearn.datasets import load_diabetes, fetch_california_housing
 import matplotlib.pyplot as plt
 import seaborn as sns
 import base64
@@ -165,15 +165,15 @@ else:
         #st.markdown('The Diabetes dataset is used as the example.')
         #st.write(df.head(5))
 
-        # Boston housing dataset
-        boston = load_boston()
-        X = pd.DataFrame(boston.data, columns=boston.feature_names)
-        Y = pd.Series(boston.target, name='response')
+        # california housing dataset
+        california = fetch_california_housing()
+        X = pd.DataFrame(california.data, columns=california.feature_names)
+        Y = pd.Series(california.target, name='response')
         
-        #X = pd.DataFrame(boston.data, columns=boston.feature_names).loc[:100] # FOR TESTING PURPOSE, COMMENT THIS OUT FOR PRODUCTION
-        #Y = pd.Series(boston.target, name='response').loc[:100] # FOR TESTING PURPOSE, COMMENT THIS OUT FOR PRODUCTION
+        #X = pd.DataFrame(california.data, columns=california.feature_names).loc[:100] # FOR TESTING PURPOSE, COMMENT THIS OUT FOR PRODUCTION
+        #Y = pd.Series(california.target, name='response').loc[:100] # FOR TESTING PURPOSE, COMMENT THIS OUT FOR PRODUCTION
         df = pd.concat( [X,Y], axis=1 )
 
-        st.markdown('The Boston housing dataset is used as the example.')
+        st.markdown('The california housing dataset is used as the example.')
         st.write(df.head(5))
         build_model(df)
